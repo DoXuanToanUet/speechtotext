@@ -245,5 +245,8 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #recording-instructions {
+    top: 230px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
