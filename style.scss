@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f6f9;
+    color: #1F2667;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family:"Nerko";
+    font-weight: 400;
+    src: url("font/NerkoOne-Regular.ttf") format("truetype");
+}
+.tox-tinymce {
+    overflow: visible !important;
+  
+}
+
+.tox .tox-editor-container {
+    overflow: visible !important;
+}
+
+.tox-editor-header {
+    position: sticky !important;
+    top: 0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .08) !important;
+}
+
+.tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+    border-right: 1px solid #e0e4e8 !important;
+}
+
+.tox-tinymce {
+    border: 1px solid #e0e4e8 !important;
+}
+
+.tox .tox-statusbar {
+    border-top: 1px solid #e0e4e8 !important;
+}
+
+.tox .tox-menubar+.tox-toolbar,
+.tox .tox-menubar+.tox-toolbar-overlord .tox-toolbar__primary {
+    border-top: 1px solid #e0e4e8 !important;
+}
+
+.tt-download svg {
+    color: #d90a2c;
+    width: 20px;
+    height: 20px;
+}
+
+.left-content {
+    position: fixed;
+    // width: 50px;
+    height: auto;
+    z-index: 2;
+    left: 0;
+    // background: #222436;
+    top: 50%;
+    transform: translateY(-50%);
+    .tt-download {
+        // background-color: #d90a2c;
+    }
+    .left-common {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+}
+.title-note{
+    padding: 10px ;
+    background: #fff;
+}
+.title-wrapper{
+    background: linear-gradient(90deg, #effaff 0%, #d9e7ff 100%);
+   
+   
+}
+
+.title-common {
+    text-align: center;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(75deg, rgba(0,69,162,0.99) 8%, rgba(166,68,229,0.7));
+    //  background-image: linear-gradient(75deg, rgba(0,69,162,0.99) 8%, rgba(166,68,229,0.7))
+    font-family:"Nerko";
+    -webkit-background-clip: text;
+    padding: 80px;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+   
+} 
+
+.common-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #d90a2c;
+    cursor: pointer;
+    // border: 1px solid #eaeaea;
+   
+}
+.tt-pause{
+    background-color: #1877f2;
+}
+.tt-download-content {
+    background: #fff;
+    opacity: 0;
+    visibility:hidden;
+    transition: all 0.4s ease-in-out;
+}
+.tt-download:hover .tt-download-content {
+    opacity: 1;
+    visibility:visible;
+}
+.tt-download-type{
+    padding: 5px 9px;
+    font-size: 14px;
+    color: #000;
+}
+.data{
+    display:none;
+}
+.tt-record{
+    background: #8cd72d;
+}
+.no-browser-support{
+    display: none;
+    align-items: center;
+    h3,img{
+        width: 50%;
+    }
+    h3{
+        padding: 60px;
+        text-align: center;
+        color: #434F58;
+        font-weight: 600;
+    }
+    background:#fff;
+    padding: 40px;
+
+}
+.support{
+    display: flex;
+}
+.tt-copyright{
+    text-align: center;
+    padding: 20px;
+    background:#F4F6F9 ;
+    color:#677983;
+    font-size: 13px;
+}
+.common-a{
+    color: #677983;
+}
+.tt-header{
+    background: url("img/bg_service_right.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#recording-instructions{
+    position: fixed;
+    height: 50px;
+    top: 100px;
+    right: 0px;
+    color: #fff;
+}
+.btn-info{
+    background-color: #8cd72d;
+    padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .left-content{
+        bottom: 0;
+        width: 100%;
+        top: inherit;
+        transform:inherit;
+    }
+  
+    .tt-download-content {
+        top: 0px;
+        position: absolute;
+        left: -120px;
+        width: 120px;
+        
+    }
+    
+    .left-content .left-common{
+        position: relative;
+    }
+    .left-content-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}

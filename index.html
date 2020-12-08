@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tooltipjs/scale.css">
+    <link rel="stylesheet" href="tooltipjs/tippy.css">
+    <link rel="stylesheet" href="tooltipjs/shift-away.css">
+    <link rel="stylesheet" href="tooltipjs/shift-toward.css">
+    <link rel="stylesheet" href="tooltipjs/scale-extreme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lineawsome/Web Font/style.css">
+    <title>TinyMCE </title>
+</head>
+
+<body>
+    <div class="container">
+       
+        <div class="title-wrapper">
+        
+            <div class="tt-header">
+                <h1 class="title-common">Speech to Text</h1> 
+               
+            </div>
+            
+        </div>
+        <div class="no-browser-support"> 
+            <img src="img/dont-support.jpg" alt="Hỗ trợ trình duyệt Chorme">
+            <h3>Trình duyết không hỗ trợ API. Làm ơn mở trình duyệt khác như Chorme, Cốc Cốc, Microsoft Edge</h3>
+          
+        </div>
+        <div class="tt-content">
+            <h3 class="title-note">Trình soạn thảo </h3>
+            <form method="post">
+                <textarea class="tinymce" id="data-mce">Hello, World!</textarea>
+            </form>
+        </div>
+       
+    </div>
+    <div class="left-content">
+        <div class="left-content-wrapper">
+            <div class="tt-download left-common "  >
+                <span class="lnr lnr-enter-down common-icon tt-tooltip" data-tippy-content="Tải file về máy "></span>
+                <div class="tt-download-content">
+                    <div class="tt-downloadtxt tt-download-type tt-tooltip"  data-tippy-content="Tải file TXT">Download txt</div>
+                    <div class="tt-downloaddoc tt-download-type tt-tooltip"   data-tippy-content="Tải file Word ">Download doc</div>
+                </div>
+            </div>
+            <div class="tt-record tt-tooltip common-icon" data-tippy-content="Bắt đầu thu âm ">
+                <span class="lnr lnr-film-play"></span>
+            </div>
+            <div class="tt-pause common-icon tt-tooltip" data-tippy-content="Dừng thu âm">
+                <span>|| </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="data">
+
+    </div>
+    <div class="container ">
+        <div class="tt-copyright">Design by <a href="https://www.facebook.com/xuantoanme" class="common-a" target="_blank">Toàn Đỗ Xuân Deverloper</a></div>
+    </div>
+    <div class="" id="recording-instructions"></div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/FileSaver.js"></script>
+<script src="tinymce/js/tinymce/tinymce.min.js"></script>
+<script src="tooltipjs/popper.min.js"></script>
+<script src="tooltipjs/tippy-bundle.iife.js"></script>
+<script src="js/tinymce.js"></script>
+<script src="js/main.js"></script>
+
+</html>
